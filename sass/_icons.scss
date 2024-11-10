@@ -1,0 +1,25 @@
+.forecast-icon .bi-sun {
+    color: #ffcc00;
+  }
+  
+  .forecast-icon .bi-cloud-sun,
+  .forecast-icon .bi-cloud {
+    color: #adb5bd;
+  }
+  
+  .forecast-icon .bi-cloud-rain {
+    color: $primary-color;
+  }
+  
+  .forecast-icon .bi-snow {
+    color: #80d0c7;
+  }
+  
+  .forecast-icon .bi-cloud-fog {
+    color: $secondary-color;
+  }
+
+  .forecast-icon i {
+    @include transition(color, 0.3s);
+  }
+  

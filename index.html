@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather SPA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <img src="Style/logoVerdeTransparente.png" width="200" height="60" style="margin-bottom: 20px;">
+    <div class="text-center mb-4 mt-3">
+      <button id="current-weather-btn" class="btn btn-primary">Pronóstico Actual</button>
+      <button id="search-weather-btn" class="btn btn-secondary">Buscar por Ciudad</button>
+    </div>
+    <div id="current-weather-section" class="weather-section" style="display: none;">
+      <h2>Pronóstico Actual</h2>
+      <h3 id="location-name"></h3>
+      <p id="temperature"></p>
+      <div id="hourly-forecast" class="forecast-container"></div>
+    </div>
+
+    <div id="city-search-section" class="weather-section" style="display: none;">
+      <h2>Buscar Ciudad</h2>
+      <input type="text" id="city-input" class="form-control mb-3" placeholder="Introduce el nombre de la ciudad...">
+      <button id="search-btn" class="btn btn-primary">Buscar</button>
+      <div id="city-weather-content" style="display: none;">
+        <h3 id="searched-city-name"></h3>
+        <p id="searched-temperature"></p>
+        <div id="searched-hourly-forecast" class="forecast-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
